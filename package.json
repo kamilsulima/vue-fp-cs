@@ -1,7 +1,8 @@
 {
   "name": "vue-fs-cs",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
+  "description": "Fork of Vue.js wrapper for fullPage library",
+  "main": "js/main.js",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
