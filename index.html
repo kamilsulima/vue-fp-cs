@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>newBook</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+
+<script>$(document).ready(function(){
+   steps=3; //has to match css
+  
+  var content=$(".original").html();
+  var top=$("<div/>").insertBefore(".original");
+  var bottom=$("<div/>").insertBefore(".original");
+  
+  for(var i=0;i<steps;i++){
+    $("<div/>").addClass("realistic blur blur-top").html(content).appendTo(top);
+    $("<div/>").addClass("realistic blur blur-bottom").html(content).appendTo(bottom);
+  }
+  
+  
+  $(".original").on("input",function(){
+    $(".blur").html($(".original").html());
+  })
+  
+})</script>
+
+<div id="app">
+    <full-page :options="options" id="fullpage" ref="fullpage">
+        <div class="section">
+            <h1>You are more than Welcome.</h1>
+            <p class="pcenter">
+<!-- Open source crossplatform cloud application for generating interactive and memorizable single page stories.--></p> 
+        </div>
+        <div class="section">
+            <div class="slide">
+                <h3>Slide 2.1</h3>
+            </div>
+            <div class="slide">
+                <h3>Slide 2.2</h3>
+            </div>
+            <div class="slide">
+                <h3>Slide 2.3</h3>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Section 3</h3>
+        </div>
+        <div class="overlay"></div>
+    </full-page>
+<!--      
+    <a class="view-github" href="https://github.com/alvarotrigo/vue-fullpage.js" target="_blank">View on Github</a>
+    
+    <ul class="actions">
+        <li @click="moveSectionDown" class="actions-button">Down</li>
+        <li @click="moveSectionUp" class="actions-button">Up</li>
+        <li @click="moveTo(2,2)" class="actions-button">MoveTo</li>
+        <li @click="silentMoveTo(2,2)" class="actions-button">Silent Move</li>
+        <li @click="moveSlideRight" class="actions-button">Move right</li>
+        <li @click="moveSlideLeft" class="actions-button">Move lef</li>
+        <li @click="setAutoScrolling(false)" class="actions-button">Set autoScroll</li>
+        <li @click="setFitToSection(false)" class="actions-button">Set fitTo</li>
+        <li @click="setAllowScrolling(false)" class="actions-button">Set allowScroll</li>
+        <li @click="setKeyboardScrolling(false)" class="actions-button">Set keyboardScroll</li>
+        <li @click="setScrollingSpeed(4000)" class="actions-button">setScrollingSpeed</li>
+        <li @click="destroy('all')" class="actions-button">Destroy</li>
+        <li @click="addSection" class="actions-button">Add section</li>
+        <li @click="removeSection" class="actions-button">Remove section</li>
+    </ul>-->
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+
+<script src="https://alvarotrigo.com/vue-fullpage/dist/js/mixin.min.js?v=21"></script>
+<script src="https://alvarotrigo.com/vue-fullpage/dist/js/build.min.js?v=21"></script>
+<!-- 
+ -->
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
