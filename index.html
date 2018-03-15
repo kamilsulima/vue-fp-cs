@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <title>newBook</title>
       <!-- <link rel="stylesheet" href="css/style.css"> -->
-</head>
-
-<body>
-
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+      
+<!-- STYLE -->
 <style>
  .realistic,body{font-family:Lato}body{color:#000;text-align:justify}.section{position:relative}.slide{text-align:center}.realistic{color:#222;font-size:1.5rem;-webkit-filter:contrast(7);opacity:.25;transform-origin:50%
 600px;text-shadow:0 0 3px rgba(34,34,34,.6),0 0 1px rgba(34,34,34,.2);text-align:justify}.pcenter,h1{text-align:center}p{text-indent:4rem;padding-left:10rem;padding-right:10rem}.pcenter{font-size:1.7rem}h1{font-weight:400;font-size:3rem}.overlay{position:absolute;top:0;left:0;bottom:0;right:0;background:linear-gradient(rgba(238,238,238,.3),rgba(238,238,238,0));z-index:99;pointer-events:none}
 </style>
-<script>$(document).ready(function(){
+
+<!-- HEAD SCRIPTS -->
+<script>
+	$(document).ready(function(){
    steps=3; //has to match css
   
   var content=$(".original").html();
@@ -25,20 +26,23 @@
     $("<div/>").addClass("realistic blur blur-top").html(content).appendTo(top);
     $("<div/>").addClass("realistic blur blur-bottom").html(content).appendTo(bottom);
   }
-  
-  
+
   $(".original").on("input",function(){
     $(".blur").html($(".original").html());
   })
   
-})</script>
+})
+</script>
+
+</head>
+<body>
 
 <div id="app">
     <full-page :options="options" id="fullpage" ref="fullpage">
         <div class="section">
-            <h1>You are more than Welcome.</h1>
-            <p class="pcenter">
-<!-- Open source crossplatform cloud application for generating interactive and memorizable single page stories.--></p> 
+            <h1>VUE-FULLPAGE</h1>
+            <p class="pcenter">for CODESANDBOX
+             </p> 
         </div>
         <div class="section">
             <div class="slide">
@@ -56,28 +60,9 @@
         </div>
         <div class="overlay"></div>
     </full-page>
-<!--      
-    <a class="view-github" href="https://github.com/alvarotrigo/vue-fullpage.js" target="_blank">View on Github</a>
-    
-    <ul class="actions">
-        <li @click="moveSectionDown" class="actions-button">Down</li>
-        <li @click="moveSectionUp" class="actions-button">Up</li>
-        <li @click="moveTo(2,2)" class="actions-button">MoveTo</li>
-        <li @click="silentMoveTo(2,2)" class="actions-button">Silent Move</li>
-        <li @click="moveSlideRight" class="actions-button">Move right</li>
-        <li @click="moveSlideLeft" class="actions-button">Move lef</li>
-        <li @click="setAutoScrolling(false)" class="actions-button">Set autoScroll</li>
-        <li @click="setFitToSection(false)" class="actions-button">Set fitTo</li>
-        <li @click="setAllowScrolling(false)" class="actions-button">Set allowScroll</li>
-        <li @click="setKeyboardScrolling(false)" class="actions-button">Set keyboardScroll</li>
-        <li @click="setScrollingSpeed(4000)" class="actions-button">setScrollingSpeed</li>
-        <li @click="destroy('all')" class="actions-button">Destroy</li>
-        <li @click="addSection" class="actions-button">Add section</li>
-        <li @click="removeSection" class="actions-button">Remove section</li>
-    </ul>-->
 </div>
 
-
+<!-- SCRIPTS BODY -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
@@ -86,11 +71,9 @@
 
 <script src="https://alvarotrigo.com/vue-fullpage/dist/js/mixin.min.js?v=21"></script>
 <script src="https://alvarotrigo.com/vue-fullpage/dist/js/build.min.js?v=21"></script>
-<!-- 
- -->
 
-    <script  src="js/index.js"></script>
 
+<script  src="js/index.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 {
-  "name": "vue-fs-cs",
+  "name": "vue-fs-cs-wip",
   "version": "0.0.0",
   "description": "Fork of Vue.js wrapper for fullPage library",
   "main": "js/index.js",
@@ -25,5 +25,6 @@
     "webpack-dev-server": "^2.9.7"
   },
   "author": "Kamil Sulima",
-  "license": "GNU GPL license v3"
+  "license": "GNU GPL license v3",
+  "keywords": []
 }
