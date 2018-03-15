@@ -9,7 +9,7 @@
 // script
 
 <script>
-import fullpageMain from "./components/fullpageMain";
+import fullpageMain from "/components/fullpageMain";
 
 export default {
   name: "app",
