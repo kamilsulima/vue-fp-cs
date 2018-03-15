@@ -1,3 +1,4 @@
+<template>
 <ul class="actions">
         <li @click="moveSectionDown" class="actions-button">Down</li>
         <li @click="moveSectionUp" class="actions-button">Up</li>
@@ -14,3 +15,4 @@
         <li @click="addSection" class="actions-button">Add section</li>
         <li @click="removeSection" class="actions-button">Remove section</li>
 </ul>
+</template>
