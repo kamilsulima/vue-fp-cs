@@ -1,4 +1,4 @@
-# vue-fp-cs
+# vue-fp-cs [WIP]
 Fork of Vue.js wrapper for fullPage.js. 
 
 Codesandbox [implementation](https://codesandbox.io/s/z20m4807nm). 
